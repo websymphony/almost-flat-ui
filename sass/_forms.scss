@@ -1,0 +1,30 @@
+form{
+  input.error{
+    &:focus{
+      border-color: $alizarin;
+    }
+    color:$alizarin;
+  }
+  .success input{
+    border-color: $success-color;
+    color:$success-color;
+    &:focus{
+      border-color: $success-color;
+    }
+  }
+
+
+  .success label,
+  label.success{
+    @include form-label-error-color($success-color);
+  }
+  .success small,
+  small.success{
+   @include form-error-message($success-color);
+  }
+
+  span.prefix,
+  span.postfix {
+    border-color: $clouds;
+  }
+}

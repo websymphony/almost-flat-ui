@@ -1,0 +1,10 @@
+.side-nav li {
+  a{
+    padding:5px;
+    &:hover{
+      background: $turquoise;
+      color: #fff;
+      @include transition(.25s);
+    }
+  }
+}

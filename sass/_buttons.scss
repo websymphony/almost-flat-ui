@@ -1,0 +1,91 @@
+@mixin button-effect($bg:$primary-color){
+  $dark-bg: darken($bg, 5%);
+  $darker-bg: darken($bg, 10%);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color:$dark-bg !important;
+  border-width:2px;
+  @include background-image(linear-gradient($bg, $bg 5%, $dark-bg));
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: $bg;
+    @include background-image(linear-gradient($bg, $bg));
+    @include opacity(0.95);
+    @include box-shadow(0 1px 1px rgba( 0, 0, 0, .1));
+    border-color:$darker-bg !important;
+    @include transition(.25s);
+  }
+  @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.0) inset);
+}
+.disabled:hover{
+  opacity: 0.6 !important;
+}
+.button {
+  @include button-effect();
+}
+
+
+a,
+button,
+input[type="submit"]{
+  &.primary-dark {
+    @include button-effect($belize-hole);
+  }
+
+  &.secondary {
+    @include button-effect($clouds);
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  }
+  &.success{
+    @include button-effect($emerland);
+  }
+  &.success-dark{
+   @include button-effect($turquoise);
+  }
+  &.success-darker{
+     @include button-effect($nephritis);
+  }
+  &.success-darkest{
+     @include button-effect($green-sea);
+  }
+
+  &.alert{
+   @include button-effect($alizarin);
+  }
+  &.alert-dark{
+   @include button-effect($pomegranate);
+  }
+
+  &.info{
+   @include button-effect($sun-flower);
+  }
+  &.info-dark{
+   @include button-effect($orange);
+  }
+
+  &.warning{
+   @include button-effect($carrot);
+  }
+  &.warning-dark{
+   @include button-effect($pumpkin);
+  }
+
+  &.highlight{
+   @include button-effect($amethyst);
+  }
+  &.highlight-dark{
+   @include button-effect($wisteria);
+  }
+
+  &.inverse{
+   @include button-effect($wet-asphalt);
+  }
+  &.inverse-dark{
+   @include button-effect($midnight-blue);
+  }
+}
+
+
+
+
+
