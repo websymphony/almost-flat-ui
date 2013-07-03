@@ -24,6 +24,9 @@
     color:$success-color;
     @include transition(.25s);
   }
+  .dropdown li label{
+    color:$silver;
+  }
 }
 .top-bar-unread{
   background-color: $pomegranate;

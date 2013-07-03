@@ -16572,6 +16572,9 @@ input[type="submit"].inverse-dark:active {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
+.top-bar-section .dropdown li label {
+  color: #bdc3c7;
+}
 
 .top-bar-unread {
   background-color: #c0392b;
