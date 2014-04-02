@@ -8009,10 +8009,10 @@ h4, h5, h6 {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #217dbb !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 
 a.primary-dark,
@@ -8049,10 +8049,10 @@ input[type="submit"].primary-dark:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #20638f !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.secondary,
 button.secondary,
@@ -8089,10 +8089,10 @@ input[type="submit"].secondary:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #cfd9db !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.success,
 button.success,
@@ -8128,10 +8128,10 @@ input[type="submit"].success:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #25a25a !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.success-dark,
 button.success-dark,
@@ -8167,10 +8167,10 @@ input[type="submit"].success-dark:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #148f77 !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.success-darker,
 button.success-darker,
@@ -8206,10 +8206,10 @@ input[type="submit"].success-darker:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #1e8449 !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.success-darkest,
 button.success-darkest,
@@ -8245,10 +8245,10 @@ input[type="submit"].success-darkest:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #107360 !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.alert,
 button.alert,
@@ -8284,10 +8284,10 @@ input[type="submit"].alert:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #d62c1a !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.alert-dark,
 button.alert-dark,
@@ -8323,10 +8323,10 @@ input[type="submit"].alert-dark:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #962d22 !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.info,
 button.info,
@@ -8362,10 +8362,10 @@ input[type="submit"].info:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #c29d0b !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.info-dark,
 button.info-dark,
@@ -8401,10 +8401,10 @@ input[type="submit"].info-dark:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #c87f0a !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.warning,
 button.warning,
@@ -8440,10 +8440,10 @@ input[type="submit"].warning:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #bf6516 !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.warning-dark,
 button.warning-dark,
@@ -8479,10 +8479,10 @@ input[type="submit"].warning-dark:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #a04000 !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.highlight,
 button.highlight,
@@ -8518,10 +8518,10 @@ input[type="submit"].highlight:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #7d4399 !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.highlight-dark,
 button.highlight-dark,
@@ -8557,10 +8557,10 @@ input[type="submit"].highlight-dark:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #703688 !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.inverse,
 button.inverse,
@@ -8596,10 +8596,10 @@ input[type="submit"].inverse:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #222f3d !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 a.inverse-dark,
 button.inverse-dark,
@@ -8635,10 +8635,10 @@ input[type="submit"].inverse-dark:active {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-color: #1a242f !important;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: background-color, 0.25s, ease;
+  -moz-transition: background-color, 0.25s, ease;
+  -o-transition: background-color, 0.25s, ease;
+  transition: background-color, 0.25s, ease;
 }
 
 .pagination li a {
