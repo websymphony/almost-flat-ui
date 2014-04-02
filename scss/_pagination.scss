@@ -1,0 +1,15 @@
+.pagination {
+  li a {
+    border-radius: $global-rounded !important;
+    &:hover{
+      background-color: $turquoise !important;
+      border-color: $turquoise !important;
+      color: white;
+      @include transition(background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out);
+
+    }
+  }
+  li.unavailable a:hover{
+    background-color: $clouds !important;
+  }
+}

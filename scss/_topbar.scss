@@ -1,0 +1,126 @@
+.top-bar .name h1{
+  a:hover{
+    color:$success-color;
+    @include transition(.25s);
+  }
+}
+.top-bar-section {
+  ul,
+  ul li > a {
+    background:$wet-asphalt !important;
+    @include box-shadow(-4px 0px 8px -2px rgba(0, 0, 0, 0.1));
+  }
+  li a:not(.button):hover {
+    background: $midnight-blue !important;
+    color:$success-color !important;
+    @include transition(.25s);
+  }
+  .divider {
+    border-bottom: solid 1px $midnight-blue !important;
+    border-right: solid 1px $midnight-blue !important;
+    border-top:solid 0px transparent;
+  }
+  .dropdown li.title h5 a:hover,
+  a:hover{
+    color:$success-color !important;
+    @include transition(.25s);
+  }
+  .dropdown li label{
+    color:$silver !important;
+    background: #3d566e;
+  }
+}
+.top-bar-unread{
+  background-color: $pomegranate;
+  border-radius: 30px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  min-width: 8px;
+  padding: 0 5px;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  top: -7px;
+  z-index: 10;
+}
+
+/*Websymphony.net header*/
+body nav.navigation {
+  background: #3e444e;
+  border-bottom: 1px solid #343a44;
+  clear: both;
+  position: relative;
+  min-height: 65px;
+  li {
+      list-style:none;
+  }
+}
+
+body .navigation-container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+body nav.navigation{
+  ul.logo-navigation {
+    float: left;
+    margin: 0;
+    margin-top: -6px;
+    li a {
+      font-size: 3em;
+      font-weight: bolder;
+      text-decoration: none;
+      padding: .13em .3em;
+      color: #fff;
+      text-shadow: 1px 1px #000;
+      background: #343a44;
+      -webkit-transition: background 0.3s;
+      -moz-transition: background 0.3s;
+      -o-transition: background 0.3s;
+      transition: background 0.3s;
+      font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
+      padding-bottom: .2em;
+      &:hover {
+      background: #1e70ce;
+      }
+    }
+  }
+  ul.main-navigation {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    max-width: 600px;
+    float: right;
+    li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      white-space: nowrap;
+      display: inline;
+      float: left;
+      padding-left: 2.55em;
+      padding-top: 1.1em;
+      a {
+        color: #c4c7cc;
+        text-decoration: none;
+        font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
+        font-size: 22px;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        transition: color 0.3s;
+        &:hover,
+        &.active{
+          color:#fff;
+        }
+      }
+    }
+  }
+  ul.main-navigation li:first-child,
+  ul.main-navigation li.first {
+    padding-left: 0;
+  }
+}

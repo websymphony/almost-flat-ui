@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="stylesheets/app.css" />
 
 
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
+  <script src="javascripts/vendor/modernizr.js"></script>
 
 </head>
 <body>
@@ -114,7 +114,7 @@
       <div class="row" id="doc-topbar">
         <div class="large-12 columns">
           <h5>Top Bar</h5>
-          <nav class="top-bar">
+          <nav class="top-bar" data-topbar>
             <ul class="title-area">
               <!-- Title Area -->
               <li class="name">
@@ -434,7 +434,7 @@
               </div>
 
               <div class="row">
-                <div class="large-6 columns">
+                <div class="large-6 columns error">
                   <label class="error">Error</label>
                   <input type="text" class="error">
                   <small class="error">Invalid entry</small>
@@ -766,42 +766,53 @@
           </div>
         </div>
       </div>
-      <div class="row" id="doc-section">
+      <div class="row" id="doc-content">
         <div class="large-12 columns">
-          <h5>Sections</h5>
+          <br>
+          <h5>Content</h5>
           <hr>
-          <h6>Auto</h6>
-          <div class="section-container auto" data-section>
-            <section class="section">
-              <p class="title"><a href="#panel1">Section 1</a></p>
-              <div class="content">
-                <p>Content of section 1.</p>
+          <div class="row">
+            <div class="large-12 columns">
+              <h6>Horizontal Tabs</h6>
+              <dl class="tabs" data-tab>
+                <dd class='active'><a href="#htab-panel1">Tab 1</a></dd>
+                <dd><a href="#htab-panel2">Tab 2</a></dd>
+                <dd><a href="#htab-panel3">Tab 3</a></dd>
+                <dd>
+              </dl>  
+              <div class="tabs-content">
+                <div class="content active" id="htab-panel1">
+                  <p>First panel content goes here...</p>
+                </div>
+                <div class="content" id="htab-panel2">
+                  <p>Second panel content goes here...</p>
+                </div>
+                <div class="content" id="htab-panel3">
+                  <p>Third panel content goes here...</p>
+                </div>
               </div>
-            </section>
-            <section class="section">
-              <p class="title"><a href="#panel2">Section 2</a></p>
-              <div class="content">
-                <p>Content of section 2.</p>
-              </div>
-            </section>
+            </div>
           </div>
           <hr>
           <div class="row">
             <div class="large-12 columns">
-              <h6>Tabs</h6>
-              <div class="section-container tabs" data-section>
-                <section class="section">
-                  <p class="title"><a href="#panel1">Section 1</a></p>
-                  <div class="content">
-                    <p>Content of section 1.</p>
-                  </div>
-                </section>
-                <section class="section">
-                  <p class="title"><a href="#panel2">Section 2</a></p>
-                  <div class="content">
-                    <p>Content of section 2.</p>
-                  </div>
-                </section>
+              <h6>Vertical Tabs</h6>
+              <dl class="tabs vertical" data-tab>
+                <dd class='active'><a href="#vtab-panel1">Tab 1</a></dd>
+                <dd><a href="#vtab-panel2">Tab 2</a></dd>
+                <dd><a href="#vtab-panel3">Tab 3</a></dd>
+                <dd>
+              </dl>  
+              <div class="tabs-content vertical">
+                <div class="content active" id="vtab-panel1">
+                  <p>First panel content goes here...</p>
+                </div>
+                <div class="content" id="vtab-panel2">
+                  <p>Second panel content goes here...</p>
+                </div>
+                <div class="content" id="vtab-panel3">
+                  <p>Third panel content goes here...</p>
+                </div>
               </div>
             </div>
           </div>
@@ -809,91 +820,20 @@
           <div class="row">
             <div class="large-12 columns">
               <h6>Accordion</h6>
-              <div class="section-container accordion" data-section>
-                <section class="section">
-                  <p class="title"><a href="#panel1">Section 1</a></p>
-                  <div class="content">
-                    <p>Content of section 1.</p>
+              <dl class="accordion" data-accordion>
+                <dd>
+                  <a href="#accordion-panel1">Panel 1</a>
+                  <div class="content" id='accordion-panel1'>
+                    <p>Content of Panel 1.</p>
                   </div>
-                </section>
-                <section class="section">
-                  <p class="title"><a href="#panel2">Section 2</a></p>
-                  <div class="content">
-                    <p>Content of section 2.</p>
+                </dd>
+                <dd>
+                  <a href="#accordion-panel2">Panel 2</a>
+                  <div class="content" id="accordion-panel2">
+                    <p>Content of Panel 2.</p>
                   </div>
-                </section>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="large-12 columns">
-              <h6>Vertical Nav</h6>
-              <div class="row">
-                <div class="large-3 columns">
-                  <div class="section-container vertical-nav" data-section="vertical-nav">
-                    <section class="section">
-                      <p class="title"><a href="#">Section 1</a></p>
-                      <div class="content">
-                        <ul class="side-nav">
-                          <li><a href="#">Link 1</a></li>
-                          <li><a href="#">Link 2</a></li>
-                          <li><a href="#">Link 3</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">Link 1</a></li>
-                        </ul>
-                      </div>
-                    </section>
-                    <section class="section">
-                      <p class="title"><a href="#">Section 2</a></p>
-                      <div class="content">
-                        <ul class="side-nav">
-                          <li><a href="#">Link 1</a></li>
-                          <li><a href="#">Link 2</a></li>
-                          <li><a href="#">Link 3</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#">Link 1</a></li>
-                        </ul>
-                      </div>
-                    </section>
-                  </div>
-                </div>
-                <div class="large-9 columns">
-                  <p>Content to the right of the navigation.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="large-12 columns">
-              <h6>Horizontal Nav</h6>
-              <div class="section-container horizontal-nav" data-section="horizontal-nav">
-                <section class="section">
-                  <p class="title"><a href="#">Section 1</a></p>
-                  <div class="content">
-                    <ul class="side-nav">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Link 1</a></li>
-                    </ul>
-                  </div>
-                </section>
-                <section class="section">
-                  <p class="title"><a href="#">Section 2</a></p>
-                  <div class="content">
-                    <ul class="side-nav">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Link 1</a></li>
-                    </ul>
-                  </div>
-                </section>
-              </div>
+                </dd>
+              </dl>
             </div>
           </div>
         </div>
@@ -907,11 +847,10 @@
       </div>
     </div>
     <div class="large-3 pull-9 columns">
-      <div class="docs section-container accordion" data-section="" data-options="deep_linking: false" style="">
-
-        <section class="section ">
-          <p class="title" style=""><a href="#">Navigation</a></p>
-          <div class="content" style="">
+      <dl class="docs accordion" data-accordion>
+        <dd class='active'>
+          <a href="#panel-nav">Navigation</a>
+          <div class="content active" id="panel-nav">
             <ul class="side-nav">
               <li><a class="" href="#doc-pagination">Pagination</a></li>
               <li><a class="" href="#doc-sidenav">Side Nav</a></li>
@@ -920,36 +859,36 @@
               <li><a class="" href="#doc-breadcrumbs">Breadcrumbs</a></li>
             </ul>
           </div>
-        </section>
-        <section class="section ">
-          <p class="title" style=""><a href="#">Buttons</a></p>
-          <div class="content" style="">
+        </dd>
+        <dd>
+        <a href="#panel-buttons">Buttons</a>
+          <div class="content" id='panel-buttons' > 
             <ul class="side-nav">
               <li><a class="" href="#doc-almost-flat-buttons">Almost Flat Buttons</a></li>
               <li><a class="" href="#doc-almost-flat-button-groups">Almost Flat Button Groups</a></li>
             </ul>
           </div>
-        </section>
-        <section class="section ">
-          <p class="title" style=""><a href="#">Forms</a></p>
-          <div class="content" style="">
+        </dd>
+        <dd>
+          <a href="#panel-forms">Forms</a>
+          <div class="content" id="panel-forms">
             <ul class="side-nav">
               <li><a class="" href="#doc-forms">Forms</a></li>
             </ul>
           </div>
-        </section>
-        <section class="section ">
-          <p class="title" style=""><a href="#">Typography</a></p>
-          <div class="content" style="">
+        </dd>
+        <dd>
+          <a href="#panel-typography">Typography</a>
+          <div class="content" id="panel-typography">
             <ul class="side-nav">
               <li><a class="" href="#doc-type">Type</a></li>
               <li><a class="" href="#doc-labels">Labels</a></li>
             </ul>
           </div>
-        </section>
-        <section class="section ">
-          <p class="title" style=""><a href="#">CSS Components</a></p>
-          <div class="content" style="">
+        </dd>
+        <dd>
+          <a href="#panel-css-components">CSS Components</a>
+          <div class="content" id="panel-css-components">
             <ul class="side-nav">
               <li><a class="" href="#doc-alert-boxes">Alert Boxes</a></li>
               <li><a class="" href="#doc-panels">Panels</a></li>
@@ -959,20 +898,21 @@
               <li><a class="" href="#doc-thumbnails">Thumbnails</a></li>
             </ul>
           </div>
-        </section>
-        <section class="section" style="">
-          <p class="title" style=""><a href="#">Javascript</a></p>
-          <div class="content" style="">
+        </dd>
+        <dd>
+          <a href="#panel-javascript">Javascript</a>
+          <div class="content" id="panel-javascript">
             <ul class="side-nav">
               <li><a class="" href="#doc-clearing">Clearing</a></li>
-              <li><a class="" href="#doc-section">Section</a></li>
+              <li><a class="" href="#doc-content">Content</a></li>
               <li><a class="" href="#doc-tooltips">Tooltips</a></li>
             </ul>
           </div>
-        </section>
-      </div>
+        </dd>
+      </dl>
       <div class="row">
         <div class="large-12 columns text-center">
+          <br><br>
           <a href="http://github.com/websymphony/almost-flat-ui" class="button alert radius">Download</a>
           <hr>
           <br>
@@ -985,40 +925,11 @@
     </div>
   </div>
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
 
-  <script src="javascripts/foundation/foundation.js"></script>
+  <script src="javascripts/vendor/jquery.js"></script>
+  <script src="javascripts/vendor/jquery.cookie.js"></script>
 
-	<script src="javascripts/foundation/foundation.alerts.js"></script>
-
-	<script src="javascripts/foundation/foundation.clearing.js"></script>
-
-	<script src="javascripts/foundation/foundation.cookie.js"></script>
-
-	<script src="javascripts/foundation/foundation.dropdown.js"></script>
-
-	<script src="javascripts/foundation/foundation.forms.js"></script>
-
-	<script src="javascripts/foundation/foundation.joyride.js"></script>
-
-	<script src="javascripts/foundation/foundation.magellan.js"></script>
-
-	<script src="javascripts/foundation/foundation.orbit.js"></script>
-
-	<script src="javascripts/foundation/foundation.placeholder.js"></script>
-
-	<script src="javascripts/foundation/foundation.reveal.js"></script>
-
-	<script src="javascripts/foundation/foundation.section.js"></script>
-
-	<script src="javascripts/foundation/foundation.tooltips.js"></script>
-
-	<script src="javascripts/foundation/foundation.topbar.js"></script>
-
+  <script src="javascripts/foundation.min.js"></script>
 
   <script>
     $(document).foundation();

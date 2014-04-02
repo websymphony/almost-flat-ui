@@ -1,0 +1,29 @@
+// Global Foundation Settings
+ @import "settings";
+
+// Comment out this import if you are customizing you imports below
+//@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+ @import "foundation"; // *always required
+
+// Compass Imports
+ @import "compass/css3/box-shadow";
+ @import "compass/css3/images";
+ @import "compass/css3/transition";
+ @import "compass/css3/opacity";
+
+// FLAT UI Customizations
+@import "headings";
+@import "buttons";
+@import "pagination";
+@import "topbar";
+@import "subnav";
+@import "forms";
+@import "sections";
+@import "sidenav";
+@import "breadcrumbs";
+@import "misc";
+

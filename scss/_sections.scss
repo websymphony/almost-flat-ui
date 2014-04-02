@@ -1,0 +1,38 @@
+.accordion{
+  border:2px solid $clouds;
+  >.active{
+    >a{
+       background:$midnight-blue !important;
+       color:#fff;
+    }
+  }
+  >dd >a{
+    &:hover{
+      background:$turquoise !important;
+      color:#fff;
+      @include transition(.25s);
+    }
+  }
+}
+
+.tabs >dd >a,
+.tabs.vertical >dd >a,
+.tabs-content{
+  border:2px solid $clouds;
+}
+.tabs >dd >a{
+  border-bottom:0px;
+  margin-left:-2px;
+}
+.tabs-content{
+  padding:10px;
+  margin-top:-2px;
+}
+.tabs.vertical >dd >a{
+  margin-top: -2px;
+}
+.tabs-content.vertical{
+  margin-top:0px;
+  border:0px;
+}
+

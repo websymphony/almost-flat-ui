@@ -1,0 +1,12 @@
+.breadcrumbs li{
+  a {
+    &:hover{
+      color:#fff;
+    }
+  }
+  &.current {
+   a:hover{
+      color:#333;
+    }
+  }
+} 

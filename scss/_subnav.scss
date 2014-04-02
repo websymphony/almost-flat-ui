@@ -1,0 +1,18 @@
+.sub-nav dt{
+  font-weight: bold;
+}
+.sub-nav dd.active a:hover{
+  background-color: $primary-color;
+}
+.sub-nav dt a,
+.sub-nav dd a{
+  padding:$sub-nav-active-padding;
+  border-radius: $global-rounded !important;
+}
+.sub-nav dt a:hover,
+.sub-nav dd a:hover {
+  background-color: $turquoise !important;
+  border-color: $turquoise !important;
+  color: white;
+  @include transition(background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out);
+}
