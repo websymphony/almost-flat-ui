@@ -20,6 +20,9 @@
 .tabs-content{
   border:2px solid $clouds;
 }
+.tabs >dd:first-child >a{
+  margin-left:0px;
+}
 .tabs >dd >a{
   border-bottom:0px;
   margin-left:-2px;
@@ -30,6 +33,7 @@
 }
 .tabs.vertical >dd >a{
   margin-top: -2px;
+  margin-left: 0px;
 }
 .tabs-content.vertical{
   margin-top:0px;
