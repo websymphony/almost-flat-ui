@@ -1,31 +1,28 @@
-form{
-  .error input{
+form {
+  .error input, .error textarea {
     border-color: $alizarin;
     color: $alizarin;
-    &:focus{
+    &:focus {
       border-color: $alizarin;
       @include box-shadow($alizarin 0px 0px 5px);
     }
-    color:$alizarin;
   }
-  .success input{
+  .success input, .success textarea {
     border-color: $success-color;
-    color:$success-color;
-    margin-bottom:0px;
-    &:focus{
+    color: $success-color;
+    margin-bottom: 0px;
+    &:focus {
       border-color: $success-color;
     }
   }
-
   .success label,
-  label.success{
+  label.success {
     @include form-label-error-color($success-color);
   }
   .success small,
-  small.success{
-   @include form-error-message($success-color);
+  small.success {
+    @include form-error-message($success-color);
   }
-
   span.prefix,
   span.postfix {
     border-color: $clouds;
